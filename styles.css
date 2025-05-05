@@ -5,6 +5,8 @@
     --bg:#010103;
     --border: 0.1rem solid rgba(255,255,255, 0.3);
 }
+@media (max-width: 768px) {
+}
 
 
 *{
