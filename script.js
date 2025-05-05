@@ -7,7 +7,7 @@ function mostrarModal(){
 }
 
 function esconderModal() {
-    modal.style.left = "-30%"
+    modal.style.left = "-50%"
    mascara.style.visibility = "hidden"
 }
 
