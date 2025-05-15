@@ -54,7 +54,7 @@ section{
     z-index: 2;
     background-color: var(--bg);
     border-bottom: var(--border);
-    width: 100vw;
+    width: 126vw;
 
 }
 .header section {
