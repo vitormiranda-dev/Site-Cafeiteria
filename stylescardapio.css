@@ -123,8 +123,8 @@ h1 , p{
 /* Estilo das imagens */
 .bolo-item img {
 
-    width: 34rem;
-    height: 34rem;
+    width: 30rem;
+    height: 30rem;
     object-fit: cover;
     border-radius: 10px;           /* width: 20rem;*/  /*    height: 240px;*/
     margin-bottom: 15px;
@@ -144,17 +144,7 @@ h1 , p{
     font-size: 1.6rem;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    .bolo-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .bolo-item {
-        width: 80%;
-    }
-}
+
 
 
 .tex   {
@@ -220,7 +210,144 @@ h1 , p{
   border-radius: 5px;
 }
 
+/* Adicione estas regras ao seu CSS existente */
 
+@media (min-width: 320px) and (max-width: 651px) {
+   .titulo2 {
+    margin-top: 8rem; /* Reduzi a margem superior */
+    font-size: 2.2rem;
+    color: var(--main-color);
+    text-align: center;
+    width: 100%;
+    padding: 1.5rem 0;
+    position: relative;
+}
+   
+   
+   
+    /* Estilos gerais dos botões de filtro */
+    .filtros {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 15px 0;
+        width: 100%;
+    }
+
+    .filtros button {
+        width: 90%;
+        max-width: 250px;
+        padding: 12px 0;
+        font-size: 1.6rem;
+        background-color: var(--main-color);
+        color: white;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+
+    /* Efeito hover para os botões */
+    .filtros button:hover {
+        background-color: #b5946a;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    /* Efeito ativo (quando clicado) */
+    .filtros button:active {
+        transform: translateY(0);
+        box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+    }
+
+    /* Estilo específico para o botão ativo/selecionado */
+    .filtros button.active {
+        background-color: #8a6d3b;
+        color: white;
+        border: 2px solid white;
+    }
+   
+   
+   
+    /* Centralização do container de bolos */
+    .bolo-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    /* Ajuste dos itens de bolo */
+    .bolo-item {
+        width: 90%;
+        max-width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Centralização das imagens */
+    .bolo-item img {
+        width: 100%;
+        height: auto;
+        max-height: 30rem;
+        margin: 0 auto;
+        display: block;
+    }
+
+    /* Centralização do texto */
+    .bolo-item h3,
+    .bolo-item p {
+        text-align: center;
+        width: 100%;
+    }
+
+    /* Ajuste do título principal */
+    .titulo2 {
+        margin-top: 8rem;
+        font-size: 1.8rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* Ajuste dos filtros */
+    .filtros {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filtros button {
+        width: 90%;
+        margin: 0.5rem 0;
+    }
+
+    /* Garantir que todos os parágrafos fiquem centralizados */
+    body p {
+        text-align: center !important;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Ajuste do menu */
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu li {
+        margin: 0.5rem 0;
+    }
+
+    
+}
 
 
 
