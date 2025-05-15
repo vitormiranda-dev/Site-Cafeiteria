@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="stylescardapio.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Cardápio - Café do Zé</title>
+  
+</head>
+<body>
+      <!-- Cabeçalho igual ao index.html -->
+     <header class="header">
+        <section>
+            <a href="index.html">
+                <img src="img/logo.png" alt="logotipo">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="cardapio.html">Bolos</a>
+            </nav>
+        </section>
+    </header>
+    
+<div class="titulo2">
+    <h1 class="1">Bolos Especiais</h1>
+    <p class="2">Descubra nossos bolos especiais, criados para encantar e surpreender quem você ama.</p>
+</div>
+
+<div class="filtros">
+    <button onclick="filtrarBolos('todos')">Todos</button>
+    <button onclick="filtrarBolos('cuties')">Cuties</button>
+    <button onclick="filtrarBolos('mousse')">Mousse</button>
+  </div>
+
+  <section class="bolo-container" id="lista-bolos">
+    <div class="bolo-item" data-categoria="cuties">
+      <img src="https://wecoffee.com.br/wp-content/themes/yootheme/cache/15/we-coffee-cute-cake-pavlova-15856b60.webp" alt="Pavlova">
+      <h3>PAVLOVA</h3>
+      <p>Encantador e mágico, cada pedaço é uma jornada de sabor.</p>
+    </div>
+
+    <div class="bolo-item" data-categoria="cuties">
+      <img src="https://wecoffee.com.br/wp-content/themes/yootheme/cache/9a/230706-CUTE-CAKES-MORANGO-9a0c4111.webp" alt="Morango">
+      <h3>CESTA DE MORANGOS</h3>
+      <p>Explosão de sabores que faz seu paladar dançar.</p>
+    </div>
+
+    <div class="bolo-item" data-categoria="cuties">
+      <img src="https://wecoffee.com.br/wp-content/themes/yootheme/cache/d0/230607-CUTE-CAKES-BALOOM-d0f0b047.webp" alt="Balloon">
+      <h3>BALLOON</h3>
+      <p>Doçura e frescor que conquistam corações.</p>
+    </div>
+
+    <div class="bolo-item" data-categoria="cuties">
+      <img src="https://wecoffee.com.br/wp-content/themes/yootheme/cache/f5/230607-CUTE-CAKES-bear-f5a2b184.webp" alt="Little Bear">
+      <h3>LITTLE BEAR</h3>
+      <p>Camadas fofinhas que derretem na boca.</p>
+    </div>
+
+    <div class="bolo-item" data-categoria="cuties">
+      <img src="https://wecoffee.com.br/wp-content/themes/yootheme/cache/56/we-coffee-cute-cake-heart-569fdcdc.webp" alt="Sweet Heart">
+      <h3>SWEET HEART</h3>
+      <p>Especial, delicioso e encantador.</p>
+    </div>
+
+    <div class="bolo-item" data-categoria="cuties">
+      <img src="https://wecoffee.com.br/wp-content/themes/yootheme/cache/8e/230610-CUTE-CAKES-garden-8ef9bbb1.webp" alt="Garden">
+      <h3>GARDEN</h3>
+      <p>Sabores florais para alegrar seu dia.</p>
+    </div>
+
+    
+    <div class="bolo-item" data-categoria="mousse">
+      <img src="https://wecoffee.com.br/wp-content/themes/yootheme/cache/7e/we-coffee-bolo-cisne-roxo-7e7b1ff0.webp" alt="Garden">
+      <h3>ABOUT US</h3>
+      <p>Um presente para aqueles que temos um relacionamento gostoso, sejam amigos, casais, familiares ou pessoas queridas.</p>
+    </div>
+
+     <div class="bolo-item" data-categoria="mousse">
+      <img src="https://wecoffee.com.br/wp-content/themes/yootheme/cache/38/we-coffee-bolo-cisne-verde-3879f9a6.webp" alt="Garden">
+      <h3>PARADISE</h3>
+      <p>Evoca a vida repleta de paz, a tranquilidade, e os melhores momentos.</p>
+    </div>
+
+     <div class="bolo-item" data-categoria="mousse">
+      <img src="https://wecoffee.com.br/wp-content/themes/yootheme/cache/d9/we-coffee-bolo-cisne-amarelo-d9fa406d.webp" alt="Garden">
+      <h3>SUNSHINE</h3>
+      <p>Significado de longevidade, prosperidade e do brilho de uma vida bem sucedida.</p>
+    </div>
+
+     <div class="bolo-item" data-categoria="mousse">
+      <img src="https://wecoffee.com.br/wp-content/themes/yootheme/cache/ce/bolo-cisne-black-manipuladas-scaled-ce3756b9.webp" alt="Garden">
+      <h3>BLACK SWAN</h3>
+      <p>Para as pessoas que são raras, preciosas e únicas em nossas vidas. Majestosas e inconfundíveis, assim como o Cisne Negro.</p>
+    </div>
+
+     <div class="bolo-item" data-categoria="mousse">
+      <img src="https://wecoffee.com.br/wp-content/themes/yootheme/cache/6b/we-coffee-bolo-cisne-rosa-1-scaled-6bcec02e.webp" alt="Garden">
+      <h3>TRUE LOVE</h3>
+      <p>Representa a doçura e a intensidade do verdadeiro amor, para os mais apaixonados.</p>
+    </div>
+
+     <div class="bolo-item" data-categoria="mousse">
+      <img src="https://wecoffee.com.br/wp-content/themes/yootheme/cache/a6/bolo-cisne-degrade-rosa-manipuladas-1-scaled-a610307d.webp" alt="Garden">
+      <h3>SEASON</h3>
+      <p>Para celebrar as melhores fases da vida. Ideal para quem valoriza cada transição e momentos de mudança.</p>
+    </div>
+
+    <div class="bolo-item" data-categoria="mousse">
+      <img src="https://wecoffee.com.br/wp-content/themes/yootheme/cache/08/we-coffee-bolo-Laranja-Cisne-Negro-085fd66e.webp" alt="Garden">
+      <h3>RENAISSANCE</h3>
+      <p>O momento de renascer de cada um, onde iniciamos uma nova fase de um futuro de infinitas possibilidades.</p>
+    </div>
+  </section>
+   
+
+
+
+
+<nav class="menu">
+    <ul>
+        <a href="">
+            <img src="img/logo.png" alt="logodebaixo" style="height: 4rem" width="4rem">
+        </a>
+    <li><a href="">Home</a></li>
+    <li><a href="">Conheça</a></li>
+    <li><a href="">Bolos</a></li>
+    <li><a href="">Cardápio</a></li>
+    <li><a href="">Shop</a></li>
+    <li><a href="">Contato</a></li>
+    <li><a href="">Guide Line</a></li>
+  
+    </ul>
+      <p>© 2025 | Todos os direitos reservados.</p>
+
+</nav>
+
+
+ 
+    
+ <script src="script.js"></script>
+</body>
+</html>

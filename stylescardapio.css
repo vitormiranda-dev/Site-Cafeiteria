@@ -1,0 +1,229 @@
+:root {
+    font-size: 10px;
+    --main-color:#d3ad7f;
+    --black:#131313;
+    --bg:#010103;
+    --border: 0.1rem solid rgba(255,255,255, 0.3);
+}
+
+
+
+
+
+
+
+body{
+    background-image: url(https://wecoffee.com.br/wp-content/themes/yootheme/cache/81/topo-bolo-v2-81bab83f.webp1);
+    background-size: cover;       /* Faz a imagem cobrir toda a tela */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-position: inherit;  /* Centraliza a imagem */
+      background-size: 100%;
+    font-family: "Roboto", sans-serif;
+   
+   
+}
+section{
+
+    padding: 3rem 2rem ;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.header {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: var(--bg);
+    border-bottom: var(--border);
+    width: 104vw;
+
+}
+.header section {
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+    padding: 1.5rem 0;
+    position: relative;
+
+
+
+}
+
+.header section a img {
+
+    height: 6rem;
+}
+
+.header section nav a  {
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    color: #fff;
+    transition: 0.3s linear;
+    text-decoration: none;
+
+
+}
+
+.header section nav a:hover{
+    color: var(--main-color);
+    border-bottom: 0.1rem solid var(--main-color) ;
+    padding-bottom: 0.5rem;
+
+
+}
+
+.titulo2    {
+    margin-top: 9.8rem; 
+    font-size: 20px;
+    
+    
+    
+}
+h1 , p{
+    text-align: center; /* ver amanha esse erro h1 e p */
+    color: #d3ad7f;
+}
+
+/* Container principal */
+.bolo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* ou space-between */
+    gap: 25px;
+    padding: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cada item de bolo */
+.bolo-item {
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+    text-align: center;
+    
+    border-radius: 10px;
+    padding: 20px;
+   
+    transition: transform 0.3s ease;
+   
+    
+}
+
+.bolo-item:hover {
+    transform: translateY(-10px);
+}
+.bolo-item:hover img {
+    transform: scale(1.1); /* Zoom de 10% */
+}
+
+/* Estilo das imagens */
+.bolo-item img {
+
+    width: 34rem;
+    height: 34rem;
+    object-fit: cover;
+    border-radius: 10px;           /* width: 20rem;*/  /*    height: 240px;*/
+    margin-bottom: 15px;
+    transition: transform 0.5s ease;
+}
+
+/* Tipografia */
+.bolo-item h3 {
+    color: rgb(56, 55, 55);
+    margin: 5px 0;
+    font-size: 2rem;
+}
+
+.bolo-item p {
+    color: #d3ad7f;
+    line-height: 1.6;
+    font-size: 1.6rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .bolo-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .bolo-item {
+        width: 80%;
+    }
+}
+
+
+.tex   {
+    
+   background-color: #d3ad7f;
+    color: red;
+  
+    text-align: left;
+    
+    
+    
+}
+.tex1 {
+    background-color: #d3ad7f;
+    color: red;
+}
+
+.paginadebaixo h1,
+.paginadebaixo p {
+  margin: 0;
+  padding: 0;
+}
+.menu {
+    align-items:center
+    
+
+    
+}
+
+.menu ul {
+  display: flex;            /* Coloca os itens em linha */
+  justify-content: center;  /* Centraliza horizontalmente */
+  list-style: none;         /* Remove os marcadores da lista */
+  padding: 0;
+  margin: 0;
+  background-color: #d3ad7f;
+}
+
+.menu li {
+  margin: 0 15px;           /* Espaço entre os itens */
+}
+
+.menu a {
+  text-decoration: none;    /* Tira o sublinhado */
+  color: black;
+  font-size: 1.4rem;
+}
+
+
+
+.filtros {
+  margin-bottom: 20px;
+}
+
+.filtros button {
+  padding: 10px 15px;
+  background-color: #ad9778;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
+
