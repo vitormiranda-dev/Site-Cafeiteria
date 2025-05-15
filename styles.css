@@ -5,8 +5,6 @@
     --bg:#010103;
     --border: 0.1rem solid rgba(255,255,255, 0.3);
 }
-@media (max-width: 768px) {
-}
 
 
 *{
@@ -15,6 +13,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: nome;
+  
 
 }
 
@@ -128,6 +127,7 @@ section{
     padding: 1rem 3rem;  
     border: none;
     transition: 0.3s linear;
+    border-radius: 10px;
 
 }
 
@@ -213,8 +213,115 @@ html {
     scroll-behavior: smooth; /* Animação suave ao rolar */
   }
 
-  #sobre-cafe {
-    padding-top: 80px; /* Espaço para não cortar o título ao rolar */
-    margin-top: -80px; /* Compensa o espaçamento */
-  }
+
+/* Estilo padrão (desktop) */
+.caixa-principal h3 {
+    margin-top: 0px; /* Valor original (ajuste conforme necessário) */
+}
+
+/* Ajuste para celular */
+@media (max-width: 768px) {
+    .caixa-principal h3 {
+        margin-top: 0; /* Remove totalmente a margem superior */
+        /* Ou use um valor menor, como 5px; */
+    }
+}
+
+/* Modal de Avaliações */
+.modal-avaliacoes {
+    position: fixed;
+    top: 50%;
+    left: -50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 800px;
+    max-height: 80vh;
+    overflow-y: auto;
+    background: var(--bg);
+    padding: 3rem;
+    border-radius: 1rem;
+    z-index: 20;
+    transition: left 1s linear;
+    border: var(--border);
+}
+
+.modal-avaliacoes .titulo {
+    margin-bottom: 2rem;
+}
+
+.mascara-avaliacoes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 15;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+/* Container das avaliações */
+.avaliacoes-container {
+    display: grid;
+    gap: 2rem;
+}
+
+.avaliacao-box {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 1rem;
+    border: var(--border);
+}
+
+.cliente-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--main-color);
+    float: left;
+    margin-right: 1.5rem;
+}
+
+.avaliacao-texto {
+    overflow: hidden;
+    color: white;
+    font-size: 15px;
+}
+
+.avaliacao-texto h4 {
+    color: var(--main-color);
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.estrelas {
+    color: gold;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+/* Quando o modal está visível */
+.modal-avaliacoes.visible {
+    left: 50%;
+}
+
+.mascara-avaliacoes.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .modal-avaliacoes {
+        padding: 2rem;
+        
+    }
+    
+    .avaliacao-box {
+        padding: 1.5rem;
+    }
+}
 
