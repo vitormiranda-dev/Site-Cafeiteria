@@ -6,10 +6,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
-    <!-- Configuração Básica para Mobile -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="mobile-web-app-capable" content="yes">
 
@@ -18,12 +16,12 @@
 
 <!-- Cor da Barra de Status (Android) -->
     <meta name="theme-color" content="#000000">
-
-<!-- Ícone para PWA (opcional) -->
-    <link rel="icon" href="favicon.png" sizes="any">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
-    <title>Café do Zé</title>
+     <title>Café do Zé</title>
+     <style>
+        @media (max-width: 600px) {
+          body { font-size: 14px; }
+        }
+    </style>
  
 </head>
 <body>
@@ -35,15 +33,15 @@
     <header class="header">
         <section>
             <a href="#">
-                <img src="logo.png" alt="logotipo">
+                <img src="img/logo.png" alt="logotipo">
             </a>
 
             <nav>
-                <a href="#">Home</a>
+                <a href="index.html">Home</a>
                 <a href="#sobre-cafe">Sobre</a>
-                <a href="#avaliacoes">Avaliações</a> <!-- Link atualizado -->
+                <a href="#" onclick="mostrarAvaliacoes()">Avaliações</a> <!-- Alterado aqui -->
                 <a href="#" onclick="mostrarModal()">Endereço</a>
-    
+                <a href="cardapio.html">Bolos</a>
             </nav>
          </section>
     </header>
@@ -52,7 +50,7 @@
          <section class="caixa-principal">
                     <div>
                         <h3>Café do Zé o Melhor Café da Região</h3>
-                        <p>Seja bem-vindo à Code, a sua nova parada obrigatória para saborear o melhor café da região! Aqui na Code, a gente leva café a sério — dos grãos selecionados com carinho até a xícara quente que chega perfeita até você. Nosso ambiente é moderno, acolhedor e feito pra quem curte qualidade, tecnologia e, claro, um café simplesmente inesquecível. Vem viver essa experiência com a gente!</p>
+                        <p>Seja bem-vindo ao Café do Zé a sua nova parada obrigatória para saborear o melhor café da região! Aqui no café do Zé, a gente leva café a sério — dos grãos selecionados com carinho até a xícara quente que chega perfeita até você. Nosso ambiente é moderno, acolhedor e feito pra quem curte qualidade, tecnologia e, claro, um café simplesmente inesquecível. Vem viver essa experiência com a gente!</p>
                         <a class="botao-link">Pague o seu agora</a>
                     </div>
         </section>
@@ -63,7 +61,7 @@
             <h2 class="titulo"><span>Sobre</span> Nós</h2>
          <div class="sobre-container">
             <div class="sobre-imagem">
-                <img src="about-img.jpg" alt="imagens sobre">
+                <img src="img/about-img.jpg" alt="">
             </div>
 
             <div id="sobre-cafe" class="sobre-texto"> 
@@ -84,9 +82,56 @@
 
     <div class="mascara-modal" onclick="esconderModal()">
 
+    </div>  
+
+    <!-- Modal de Avaliações -->
+<div class="modal-avaliacoes">
+    <h3 class="titulo"><span>Avaliações</span> dos Clientes</h3>
+    <div class="avaliacoes-container">
+        <div class="avaliacao-box">
+            <img src="img/pic-1.png" alt="Cliente Maria" class="cliente-img">
+            <div class="avaliacao-texto">
+                <h4>Maria Silva</h4>
+                <div class="estrelas">★★★★★</div>
+                <p>"O melhor café da cidade! Atendimento incrível e ambiente aconchegante."</p>
+            </div>
+        </div>
+        
+        <div class="avaliacao-box">
+            <img src="img/pic-2.png" alt="Cliente João" class="cliente-img">
+            <div class="avaliacao-texto">
+                <h4>João Santos</h4>
+                <div class="estrelas">★★★★☆</div>
+                <p>"Adoro o espresso do Zé! Sempre venho antes do trabalho."</p>
+            </div>
+        </div>
+        
+        <div class="avaliacao-box">
+            <img src="img/pic-3.png" alt="Cliente Ana" class="cliente-img">
+            <div class="avaliacao-texto">
+                <h4>Ana Oliveira</h4>
+                <div class="estrelas">★★★★★</div>
+                <p>"Os doces caseiros combinam perfeitamente com o café especial. Recomendo!"</p>
+            </div>
+        </div>
+
+         <div class="avaliacao-box">
+            <img src="https://media.licdn.com/dms/image/v2/D4D03AQFGT3oDW7FbKw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1676312063327?e=1752710400&v=beta&t=lPB8DEDce7TBRBQ3rvWwNHuXuQJzIoRPr18HWC8Mhj0" alt="Cliente Ana" class="cliente-img">
+            <div class="avaliacao-texto">
+                <h4>Zé Raimundo Oliveira</h4>
+                <div class="estrelas">★★★★★</div>
+                <p>"Os doces caseiros combinam perfeitamente com o café especial. Recomendo!"</p>
+            </div>
+        </div>
     </div>
+</div>
 
+<div class="mascara-avaliacoes" onclick="esconderAvaliacoes()"></div>
 
+  
+        
+
+  
    <script src="script.js"></script> 
 </body>
 </html>
