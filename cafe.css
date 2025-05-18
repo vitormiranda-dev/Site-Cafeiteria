@@ -1,0 +1,220 @@
+:root {
+    font-size: 10px;
+    --main-color:#d3ad7f;
+    --black:#131313;
+    --bg:#010103;
+    --border: 0.1rem solid rgba(255,255,255, 0.3);
+}
+
+body{
+    background-size: 100%;
+    font-family: "Roboto", sans-serif;
+   
+   
+}
+section{
+
+    padding: 3rem 2rem ;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.header {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: var(--bg);
+    border-bottom: var(--border);
+    width: 126vw;
+
+}
+.header section {
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+    padding: 1.5rem 0;
+    position: relative;
+
+
+
+}
+
+.header section a img {
+
+    height: 6rem;
+}
+
+.header section nav a  {
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    color: #fff;
+    transition: 0.3s linear;
+    text-decoration: none;
+
+
+}
+
+.header section nav a:hover{
+    color: var(--main-color);
+    border-bottom: 0.1rem solid var(--main-color) ;
+    padding-bottom: 0.5rem;
+
+
+}
+
+
+
+.cafe{
+   
+font-family: 'Georgia', serif; /* Fonte elegante */            
+font-size: 2.5em; /* Tamanho grande */
+margin-bottom: 10px;
+margin-top: 50px ;
+ color: var(--main-color);
+
+
+}
+
+h3{
+  
+  margin-left: 15rem;
+  color: var(--main-color);
+}
+.cafe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ocupa toda a largura */
+    min-height: 200px; /* Altura mínima para visualização */
+  
+}
+
+.cafe a {
+    display: block; /* Transforma o link em bloco */
+    text-align: center; /* Centraliza conteúdo inline */
+}
+
+.cafe img {
+    max-width: 50%;
+    height: auto;
+    display: block; /* Remove espaços abaixo da imagem */
+    margin: 0 auto; /* Backup para centralização */
+}
+
+.atencao {
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgb(245, 244, 242);
+    border-radius: 0.5rem;
+    width: 75%;
+    font-size: 15px;
+    margin-left: 5rem;
+  }
+
+  .coffee-item {
+    display: flex;          /* Ativa o flexbox */
+    align-items: center;    /* Centraliza verticalmente */
+    gap: 30px;              /* Espaço entre a imagem e o texto */
+    max-width: 600px;       /* Largura máxima (opcional) */
+    margin: 0 auto;         /* Centraliza o container (opcional) */
+    font-size: 15px;
+}
+
+.coffee-item img {
+    width: 100px;           /* Largura da imagem (ajuste conforme necessário) */
+    height: auto;           /* Mantém a proporção */
+}
+
+.coffee-name {
+    font-weight: bold;      /* Estilo opcional para o nome */
+    margin-bottom: 5px;     /* Espaço entre o nome e a descrição */
+    color: #c7ab8d;
+}
+
+.coffee-description {
+    margin: 0;              /* Remove margens padrão do parágrafo */
+    flex: 1;                /* Ocupa o espaço restante à direita */
+    color: #c7ab8d;
+    margin-left: 2.5rem;
+}
+
+      /* Estilo personalizado para os itens do cardápio */
+        .menu-item {
+            margin-bottom: 2rem;
+        }
+        
+        /* No mobile: empilha imagem e texto */
+        @media (max-width: 767.98px) {
+            .coffee-item {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+            
+            .coffee-item img {
+                max-width: 100%;
+                height: auto;
+                margin-bottom: 1rem;
+            }
+            
+            .coffee-name, .coffee-description {
+                width: 95%;
+                color: black;
+            }
+            .coffee-description {
+                width: 95%;
+                color: #c7ab8d;
+            }
+            h3{
+                text-align: right;
+            }
+              /* Aumenta a imagem apenas em celulares */
+            @media (max-width: 767.98px) {
+            section.cafe img {
+            width: 120%;
+            max-width: none;
+            margin-left: -10%;
+            transform: scale(1.1);
+        }
+    }
+            
+        }
+        
+        /* No desktop: mantém lado a lado */
+        @media (min-width: 768px) {
+            .coffee-item {
+                display: flex;
+                align-items: center;
+                gap: 1.5rem;
+                margin-bottom: 2rem;
+            }
+            
+            .coffee-item img {
+                width: 110px;
+                height: 110px;
+                object-fit: cover;
+                border-radius: 8px;
+            }
+            
+            .coffee-name {
+                min-width: 200px;
+                font-weight: bold;
+                font-size: 1.2rem;
+                color: #010103;
+            }
+        }
+
+           /* Adicionando um pouco de estilo para suavizar a rolagem */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Estilo para destacar as seções */
+        section[id] {
+            padding-top: 80px; /* Espaço para o cabeçalho fixo */
+            margin-top: -80px; /* Compensa o padding */
+        }
