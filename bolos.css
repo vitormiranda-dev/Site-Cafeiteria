@@ -4,23 +4,7 @@
     --black:#131313;
     --bg:#010103;
     --border: 0.1rem solid rgba(255,255,255, 0.3);
-}
-
-
-
-
-
-
-
-body{
-    background-image: url(https://wecoffee.com.br/wp-content/themes/yootheme/cache/81/topo-bolo-v2-81bab83f.webp1);
-    background-size: cover;       /* Faz a imagem cobrir toda a tela */
-    background-repeat: no-repeat; /* Evita que a imagem se repita */
-    background-position: inherit;  /* Centraliza a imagem */
-      background-size: 100%;
     font-family: "Roboto", sans-serif;
-   
-   
 }
 section{
 
@@ -106,10 +90,9 @@ h1 , p{
     text-align: center;
     
     border-radius: 10px;
-    padding: 20px;
+    padding: 2rem;
    
-    transition: transform 0.3s ease;
-   
+       
     
 }
 
@@ -123,12 +106,13 @@ h1 , p{
 /* Estilo das imagens */
 .bolo-item img {
 
-    width: 30rem;
+    width: 240px;
     height: 30rem;
     object-fit: cover;
     border-radius: 10px;           /* width: 20rem;*/  /*    height: 240px;*/
     margin-bottom: 15px;
     transition: transform 0.5s ease;
+    
 }
 
 /* Tipografia */
@@ -145,28 +129,6 @@ h1 , p{
 }
 
 
-
-
-.tex   {
-    
-   background-color: #d3ad7f;
-    color: red;
-  
-    text-align: left;
-    
-    
-    
-}
-.tex1 {
-    background-color: #d3ad7f;
-    color: red;
-}
-
-.paginadebaixo h1,
-.paginadebaixo p {
-  margin: 0;
-  padding: 0;
-}
 .menu {
     align-items:center
     
